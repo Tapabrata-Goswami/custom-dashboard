@@ -20,6 +20,8 @@
 
 <body>
     <section>
+    <div id="alert" class="alert alert-hide">Sorry! Wrong crendentials.</div>
+    <div id="success" class="success success-hide">OTP Send successfully.</div>
         <div class="container">
             <div class="form-two-container">
                 <div class="form-first-container">
@@ -33,9 +35,12 @@
                             <input class="form-input" type="email" placeholder="Email" id="user-email" require>
                         </div>
                         <div class="form-container"><input class="form-input" type="password" placeholder="Password" id="user-password"></div>
-                        <div class="form-container"><input class="form-input" type="number" placeholder="6 digit otp" id="user-opt"></div>
-                        <div class="form-container"><button class="login-btn">Login To Dashboard</button></div>
+                        <div class="form-container user-otp"><input class="form-input" type="number" placeholder="6 digit otp" id="user-otp"></div>
+                        <div class="form-container"><button class="login-btn" id="login-btn">Login To Dashboard  <i class="loading-icon fa fa-spinner fa-spin login-button-animation" ></i> </button></div>
                     </form>
+                    <div class="user-option">
+                        Login through <a>OTP <i class="fa-regular fa-paper-plane" style="color: #f35933;"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

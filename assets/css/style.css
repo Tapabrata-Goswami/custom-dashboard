@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    background-color: #ececec;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-two-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:800px;
+    height:500px;
+    background: linear-gradient(0.85turn, #367f9f, #e1f2f8, #f39633);
+    border-radius: 6px;
+    box-shadow: 1px 3px 6px rgb(113, 113, 113);
+}
+
+.login-page-image{
+    height:390px;
+}
+
+.login-form-heading{
+    font-size:28px;
+    font-weight: 600;
+}
+
+.form-second-container{
+   padding:20px; 
+}
+.form-second-container hr{
+    margin-bottom: 10px;
+    width: 70%;
+
+}
+
+.form-container{
+    padding:6px 0;
+}
+
+.form-input{
+    border: none;
+    border-radius: 6px;
+    padding:10px;
+    height:45px;
+    width:300px;
+}
+.login-btn{
+    padding:10px 20px;
+    width:100%;
+    border:none;
+    background-color: #f39633;
+    border-radius: 6px;
+}

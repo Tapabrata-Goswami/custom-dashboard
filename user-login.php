@@ -39,6 +39,7 @@
                         <div class="form-container"><button class="login-btn" id="login-btn">Login To Dashboard  <i class="loading-icon fa fa-spinner fa-spin login-button-animation" ></i> </button></div>
                     </form>
                     <div class="user-option">
+                        <!-- This Icon no need to Show  -->
                         Login through <a>OTP <i class="fa-regular fa-paper-plane" style="color: #f35933;"></i></a>
                     </div>
                 </div>

@@ -1,10 +1,16 @@
 $(document).ready(function(){
     $("#login-btn").on("click",function(event){
         event.preventDefault();
-        $(this).children("i").removeClass("login-button-animation");
+
+        /* // Animation on buttron click start ->
+
+            $(this).children("i").removeClass("login-button-animation");
+
+          // Animation on buttron click end ->*/
+        
         let userEmail = $("#user-email").val();
         let userPassword = $("#user-password").val();
-        if(userEmail == ""){
+        if(userEmail == "" || userPassword == ""){
             $("#alert").fadeIn().text("Please, fillup all fields.");
             setTimeout(function(){
                 $("#alert").fadeOut();
@@ -19,7 +25,12 @@ $(document).ready(function(){
                 },
                 success : function(data){
                     if(data == true){
-                        window.location.assign("/dashboard")
+                        $("#login-btn").html("Redirecting <i class='loading-icon fa fa-spinner fa-spin' ></i> ");
+                        setTimeout(function(){
+
+                            window.location.assign("/dashboard");
+                        },3000);
+                       
                     }else{
                         $("#alert").fadeIn().text("Sorry! Wrong crendentials.");
                         setTimeout(function(){

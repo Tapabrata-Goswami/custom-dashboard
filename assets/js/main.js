@@ -40,6 +40,18 @@ $(document).ready(function(){
                 }
             })
         }
-
     });
+
+    $(document).on("click","#through-otp",function(){
+        $("#password-input-hide").fadeOut();
+        $(this).html('PASSWORD <i class="fa-solid fa-key"></i>');
+        $(this).attr("id","through-password");
+    });
+
+    $(document).on("click","#through-password",function(){
+        $("#password-input-hide").fadeIn();
+        $(this).html('OTP <i class="fa-regular fa-paper-plane" style="color: #f35933;"></i>');
+        $(this).attr("id","through-otp");
+    });
+
 });

@@ -34,13 +34,13 @@
                         <div class="form-container">
                             <input class="form-input" type="email" placeholder="Email" id="user-email" require>
                         </div>
-                        <div class="form-container"><input class="form-input" type="password" placeholder="Password" id="user-password"></div>
-                        <div class="form-container user-otp"><input class="form-input" type="number" placeholder="6 digit otp" id="user-otp"></div>
+                        <div class="form-container" id="password-input-hide"><input class="form-input" type="password" placeholder="Password" id="user-password"></div>
+                        <div class="form-container user-otp" id="otp-input-hide"><input class="form-input" type="number" placeholder="6 digit otp" id="user-otp"></div>
                         <div class="form-container"><button class="login-btn" id="login-btn">Login To Dashboard  <i class="loading-icon fa fa-spinner fa-spin login-button-animation" ></i> </button></div>
                     </form>
                     <div class="user-option">
                         <!-- This Icon no need to Show  -->
-                        Login through <a>OTP <i class="fa-regular fa-paper-plane" style="color: #f35933;"></i></a>
+                        Login through <a href="#" id="through-otp">OTP <i class="fa-regular fa-paper-plane" style="color: #f35933;"></i></a>
                     </div>
                 </div>
             </div>

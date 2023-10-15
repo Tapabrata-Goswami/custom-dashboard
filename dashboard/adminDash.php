@@ -40,27 +40,9 @@
         </nav>
     </header>
     <!-- ====DashBoard Header End==== -->
-
-    <!-- ====Main Container start====  -->
-    <section class="dash-main-container">
-        <div class="dash-sidebar-main">
-            <div class="dash-sidebar">
-                <ul>
-                    <li><a href=""><i class="fa-regular fa-square-full"></i> Dashboard</a></li>
-                    <li><a href=""><i class="fa-solid fa-plus"></i> Add Products</a></li>
-                    <li><a href=""><i class="fa-solid fa-box-archive"></i> Products</a></li>
-                    <li><a href=""><i class="fa-regular fa-square-full"></i> Category</a></li>
-                    <hr>
-                    <li><a href=""><i class="fa-solid fa-gear"></i> Setting</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="dash-main-details">
-
-        </div>
-    </section>
-
-    <!-- ====Main Container End==== -->
+    <!-- ======Main Content Section Start======= -->
+    
+    <!-- ======Main Content Section End======= -->
 
 
     <script type="text/javascript" src="../assets/js/jquery.js"></script>

@@ -107,3 +107,7 @@
     color: #f04f26;
     text-decoration: underline;
 }
+
+.user-option a:hover{
+    cursor: pointer;
+}

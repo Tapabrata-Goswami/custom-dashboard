@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    
+    // Login THrough Password start
     $("#login-btn").on("click",function(event){
         event.preventDefault();
 
@@ -17,7 +19,7 @@ $(document).ready(function(){
             },2000)
         }else{
             $.ajax({
-                url :"main.php",
+                url :"assets/core/main.php",
                 type :"POST",
                 data : {
                     UserEmail : userEmail,
@@ -42,16 +44,21 @@ $(document).ready(function(){
         }
     });
 
+// IF click on OTP button 
     $(document).on("click","#through-otp",function(){
         $("#password-input-hide").fadeOut();
         $(this).html('PASSWORD <i class="fa-solid fa-key"></i>');
         $(this).attr("id","through-password");
     });
 
+// IF click on password button
     $(document).on("click","#through-password",function(){
         $("#password-input-hide").fadeIn();
         $(this).html('OTP <i class="fa-regular fa-paper-plane" style="color: #f35933;"></i>');
         $(this).attr("id","through-otp");
     });
+
+
+    
 
 });

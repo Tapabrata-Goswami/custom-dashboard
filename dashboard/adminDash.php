@@ -20,7 +20,7 @@
 
 <body>
     <!-- ====DashBoard Header Start==== -->
-    <header>
+    <header class="admin-header">
         <nav class="dash-navigation">
             <div class="dash-menu-logo">
                 <div class="dash-logo"><i class="fa-brands fa-shopware"></i></div>
@@ -40,8 +40,115 @@
         </nav>
     </header>
     <!-- ====DashBoard Header End==== -->
+
     <!-- ======Main Content Section Start======= -->
-    
+    <section class="main">
+
+        <!-- ADMIN SIDE BAR START -->
+        <div class="admin-sidebar">
+            <div class="admin-sidebar-menu">
+                <ul>
+                    <li><i class="fa-solid fa-house"></i> <a href="">Home</a></li>
+                    <li id="active"><i class="fa-solid fa-box-archive"></i> <a href="">Product</a></li>
+                    <li><i class="fa-solid fa-boxes-stacked"></i> <a href="">Category</a></li>
+                    <li><i class="fa-solid fa-gear"></i> <a href="">Setting</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ADMIN SIDE BAR END -->
+
+        <div class="admin-content-area">
+
+            <!-- PRODUCT LIST && PRODUCT UPLOADING AREA START -->
+            <div class="admin-product-area" style="display: none;">
+                <div class="product-header">
+                    <div class="fliter"></div>
+                    <div class="admin-add-product">
+                        <div class="admin-search-product">
+                            <input class="admin-search-input" type="text" id="search-product">
+                            <input class="admin-search-button" type="submit" value="Search">
+                        </div>
+                        <a href=""><i class="fa-solid fa-plus"></i> Add Product</a>
+                    </div>
+                </div>
+
+
+                <div class="admin-prduct-list">
+                    <table id="Admin-Product-List">
+                        <thead class="admin-thead">
+                            <tr>
+                                <th>Sl. No.</th>
+                                <th>Image</th>
+                                <th>Product Name</th>
+                                <th>Catagory</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="admin-tdata">
+                            <tr>
+                                <td>1.</td>
+                                <td><img class="list-product-image" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt=""></td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing</td>
+                                <td>Shoe</td>
+                                <td>$10.00</td>
+                                <td><span class="product-status">Active</span></td>
+                                <td><span class="product-Edit">Edit</span><span class="product-Delete">Delete</span></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td><img class="list-product-image" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt=""></td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing</td>
+                                <td>Shoe</td>
+                                <td>$100.00</td>
+                                <td><span class="product-status">Active</span></td>
+                                <td><span class="product-Edit">Edit</span><span class="product-Delete">Delete</span></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td><img class="list-product-image" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt=""></td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing</td>
+                                <td>Shoe</td>
+                                <td>$100.00</td>
+                                <td><span class="product-status">Active</span></td>
+                                <td><span class="product-Edit">Edit</span><span class="product-Delete">Delete</span></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td><img class="list-product-image" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt=""></td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing</td>
+                                <td>Shoe</td>
+                                <td>$100.00</td>
+                                <td><span class="product-status">Active</span></td>
+                                <td><span class="product-Edit">Edit</span><span class="product-Delete">Delete</span></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td><img class="list-product-image" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt=""></td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing</td>
+                                <td>Shoe</td>
+                                <td>$100.00</td>
+                                <td><span class="product-status">Active</span></td>
+                                <td><span class="product-Edit">Edit</span><span class="product-Delete">Delete</span></td>
+                                
+                            </tr>
+                            
+                        </tbody>
+
+                    </table>
+                </div>
+
+
+            </div>
+            <!-- PRODUCT LIST && PRODUCT UPLOADING AREA END -->
+
+        </div>
+    </section>
     <!-- ======Main Content Section End======= -->
 
 

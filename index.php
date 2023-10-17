@@ -1,3 +1,3 @@
 <?php
 
-// SLience is golden.
+// Slience is golden.

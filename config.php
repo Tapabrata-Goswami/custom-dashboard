@@ -10,4 +10,5 @@ define('DB_NAME','');
 define('SMTP_HOST','');
 define('SMTP_USERNAME','');
 define('SMTP_PASSWORD','');
+define('SMTP_ENCRIPTION','');
 define('SMTP_PORT','');

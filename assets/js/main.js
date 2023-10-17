@@ -19,7 +19,7 @@ $(document).ready(function(){
             },2000)
         }else{
             $.ajax({
-                url :"controller/main.php",
+                url :"controller/loginController.php",
                 type :"POST",
                 data : {
                     UserEmail : userEmail,

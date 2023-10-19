@@ -12,3 +12,4 @@ define('SMTP_USERNAME','');
 define('SMTP_PASSWORD','');
 define('SMTP_ENCRIPTION','');
 define('SMTP_PORT','');
+
